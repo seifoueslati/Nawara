@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="775.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReclamationController">
+   <children>
+      <TabPane fx:id="tab" layoutY="-30.0" prefHeight="805.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="reclamation" layoutX="100.0" layoutY="190.0" onMouseClicked="#table_clicked" prefHeight="387.0" prefWidth="700.0">
+                          <columns>
+                            <TableColumn fx:id="sujet" prefWidth="75.0" text="Sujet" />
+                            <TableColumn fx:id="description" prefWidth="118.0" text="Réclmation" />
+                              <TableColumn fx:id="date_reclamation" prefWidth="169.0" text="Date Réclamation" />
+                              <TableColumn fx:id="nom_produit" prefWidth="165.0" text="Nom du Produit" />
+                              <TableColumn fx:id="etat_reclamation" minWidth="0.0" prefWidth="172.0" text="Etat De La Réclamation" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="Modifier" layoutX="100.0" layoutY="630.0" mnemonicParsing="false" onAction="#afficher_formulaire_modifier" prefHeight="35.0" prefWidth="165.0" text="Modifier" />
+                        <Button fx:id="ajouter" layoutX="378.0" layoutY="630.0" mnemonicParsing="false" onAction="#afficher_formulaire_ajout" prefHeight="35.0" prefWidth="165.0" text="Ajouter" />
+                        <Button fx:id="Supprimer" layoutX="378.0" layoutY="630.0" mnemonicParsing="false" onAction="#supprimer_Modification" prefHeight="35.0" prefWidth="165.0" text="Supprimer" />
+                        <Button fx:id="Annuler" layoutX="635.0" layoutY="630.0" mnemonicParsing="false" onAction="#Annuler_selection" prefHeight="35.0" prefWidth="165.0" text="Annuler" />
+                        <TextField fx:id="rechercher" layoutX="180.0" layoutY="130.0" prefHeight="40.0" prefWidth="450.0" promptText="rechercher..." />
+                        <Button fx:id="rech" layoutX="515.0" layoutY="130.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="115.0" text="Rechercher" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="valider" layoutX="202.0" layoutY="647.0" mnemonicParsing="false" onAction="#Enregistrer_Ajout" prefHeight="35.0" prefWidth="165.0" text="Valider" />
+                        <Button fx:id="Annuler_formulaire" layoutX="455.0" layoutY="647.0" mnemonicParsing="false" onAction="#annuler_formulaire" prefHeight="35.0" prefWidth="165.0" text="Annuler " />
+                        <Button fx:id="enregistrer_modification" layoutX="202.0" layoutY="600.0" mnemonicParsing="false" onAction="#Enregistrer_modification" prefHeight="35.0" prefWidth="165.0" text="Enregistrer modification" />
+                        <TextArea fx:id="descript" layoutX="205.0" layoutY="264.0" prefHeight="200.0" prefWidth="422.0" promptText="Description ..." />
+                        <TextField fx:id="titre" layoutX="210.0" layoutY="192.0" prefHeight="34.0" prefWidth="293.0" promptText="Titre ..." />
+                        <ChoiceBox fx:id="produit" layoutX="202.0" layoutY="524.0" prefWidth="150.0" />
+                        <ChoiceBox fx:id="id_produit" layoutX="428.0" layoutY="524.0" prefWidth="150.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
