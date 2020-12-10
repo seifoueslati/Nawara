@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    <div class="breadcrumb-area gray-bg">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li class="active"> Réclamations </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!----Reclamations starts here---->
+    <div class="cart-main-area pt-60 pb-65">
+        <div class="container">
+            <h3 class="page-title">Liste de réclamations</h3>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                    <form action="#">
+                        <div class="table-content table-responsive">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Utilisateur</th>
+                                    <th>Sujet</th>
+                                    <th>Produit</th>
+                                    <th>Date</th>
+                                    <th>Commentaire</th>
+                                    <th>Supprimer</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="product-thumbnail">
+                                        <a href="#"><img src="{{ asset('img/client/1.png') }}" alt=""></a>
+                                    </td>
+                                    <td class="product-name"><a href="#">Dutchman's Breeches </a></td>
+                                    <td class="product-price-cart"><span class="amount">Fleur</span></td>
+                                    <td class="product-name"><a href="#">Dutchman's Breeches </a></td>
+                                    <td class="product-subtotal">Lorem ipsium</td>
+                                    <td class="product-remove">
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-thumbnail">
+                                        <a href="#"><img src="{{ asset('img/client/2.png') }}" alt=""></a>
+                                    </td>
+                                    <td class="product-name"><a href="#">Flowers Bouquet Pink</a></td>
+                                    <td class="product-price-cart"><span class="amount">Fleur</span></td>
+                                    <td class="product-name"><a href="#">Dutchman's Breeches </a></td>
+                                    <td class="product-subtotal">Lorem ipsium</td>
+                                    <td class="product-remove">
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-thumbnail">
+                                        <a href="#"><img src="{{ asset('img/client/3.png') }}" alt=""></a>
+                                    </td>
+                                    <td class="product-name"><a href="#">Evergreen Candytuft </a></td>
+                                    <td class="product-price-cart"><span class="amount">Fleur</span></td>
+                                    <td class="product-name"><a href="#">Dutchman's Breeches </a></td>
+                                    <td class="product-subtotal">Lorem ipsium</td>
+                                    <td class="product-remove">
+                                        <a href="#"><i class="fa fa-pencil"></i></a>
+                                        <a href="#"><i class="fa fa-times"></i></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

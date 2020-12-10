@@ -1,0 +1,714 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+    <div class="breadcrumb-area gray-bg">
+        <div class="container">
+            <div class="breadcrumb-content">
+                <ul>
+                    <li><a href="#">Acceuil</a></li>
+                    <li class="active">Porduits </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="shop-page-area pt-75 pb-75">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div class="col-lg-9">
+                    <div class="banner-area pb-30">
+                        <a href="#"><img alt="" src="{{ asset('img/banner/banner-49.jpg') }}"></a>
+                    </div>
+                    <div class="shop-topbar-wrapper">
+                        <div class="shop-topbar-left">
+                            <ul class="view-mode">
+                                <li class="active"><a href="#" data-view="product-grid"><i class="fa fa-th"></i></a></li>
+                                <li><a href="#" data-view="product-list"><i class="fa fa-list-ul"></i></a></li>
+                            </ul>
+                            <p> 1 - 20 de 130 résultats  </p>
+                        </div>
+                        <div class="product-sorting-wrapper">
+                            <div class="product-shorting shorting-style">
+                                <label>Voir :</label>
+                                <select>
+                                    <option value=""> 20</option>
+                                    <option value=""> 23</option>
+                                    <option value=""> 30</option>
+                                </select>
+                            </div>
+                            <div class="product-show shorting-style">
+                                <label>Trier par:</label>
+                                <select>
+                                    <option value="">Defaut</option>
+                                    <option value="">Nom</option>
+                                    <option value="">Prix</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-list-product-wrapper">
+                        <div class="product-grid product-view pb-20">
+                            <div class="row">
+                                <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-1.jpg') }}">
+                                            </a>
+                                            <span>-30%</span>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Ajouter au panier">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Dutchman's Breeches</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Dutchman's Breeches</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-2.jpg') }}">
+                                            </a>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Flowers Bouquet Pink	</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Flowers Bouquet Pink	</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-3.jpg') }}">
+                                            </a>
+                                            <span>-30%</span>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Evergreen Candytuft</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Evergreen Candytuft</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-4.jpg') }}">
+                                            </a>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Pearly Everlasting</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Pearly Everlasting</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-5.jpg') }}">
+                                            </a>
+                                            <span>-30%</span>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Yellow Loosestrife</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Yellow Loosestrife</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width pro-list-none col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-6.jpg') }}">
+                                            </a>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Golden Marguerite</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Golden Marguerite</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width pro-list-none col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-7.jpg') }}">
+                                            </a>
+                                            <span>-30%</span>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Pearly Everlasting</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Pearly Everlasting</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width pro-list-none col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-8.jpg') }}">
+                                            </a>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Polka Dot Plant</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Polka Dot Plant</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width pro-list-none col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-1.jpg') }}">
+                                            </a>
+                                            <span>-30%</span>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Glory of the Snow</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Glory of the Snow</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width pro-list-none col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-2.jpg') }}">
+                                            </a>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Jack in the Pulpit</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Jack in the Pulpit</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width pro-list-none col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-3.jpg') }}">
+                                            </a>
+                                            <span>-30%</span>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Dutchman's Breeches</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Dutchman's Breeches</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-width pro-list-none col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 mb-30">
+                                    <div class="product-wrapper">
+                                        <div class="product-img">
+                                            <a href="#">
+                                                <img alt="" src="{{ asset('img/product/product-4.jpg') }}">
+                                            </a>
+                                            <div class="product-action">
+                                                <a class="action-wishlist" href="#" title="Wishlist">
+                                                    <i class="icon-heart"></i>
+                                                </a>
+                                                <a class="action-cart" href="#" title="Add To Cart">
+                                                    <i class="icon-handbag"></i>
+                                                </a>
+                                                <a class="action-compare" href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content text-center">
+                                            <h4>
+                                                <a href="#">Flowers Bouquet Pink</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-list-details">
+                                            <h4>
+                                                <a href="#">Flowers Bouquet Pink</a>
+                                            </h4>
+                                            <div class="product-price-wrapper">
+                                                <span>$100.00</span>
+                                                <span class="product-price-old">$120.00 </span>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipic it, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <div class="shop-list-cart-wishlist">
+                                                <a href="#" title="Wishlist"><i class="icon-heart"></i></a>
+                                                <a href="#" title="Add To Cart"><i class="icon-handbag"></i></a>
+                                                <a href="#" data-target="#exampleModal" data-toggle="modal" title="Quick View">
+                                                    <i class="icon-magnifier-add"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination-total-pages">
+                            <div class="pagination-style">
+                                <ul>
+                                    <li><a class="prev-next prev" href="#"><i class="ion-ios-arrow-left"></i> Prec</a></li>
+                                    <li><a class="active" href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">...</a></li>
+                                    <li><a href="#">10</a></li>
+                                    <li><a class="prev-next next" href="#">Suiv<i class="ion-ios-arrow-right"></i> </a></li>
+                                </ul>
+                            </div>
+                            <div class="total-pages">
+                                <p> 1 - 20 de 130 resultats  </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="shop-sidebar-wrapper gray-bg-7 shop-sidebar-mrg">
+                        <div class="shop-widget">
+                            <h4 class="shop-sidebar-title">Voir par catégorie</h4>
+                            <div class="shop-catigory">
+                                <ul id="faq">
+                                    <li> <a data-toggle="collapse" data-parent="#faq" href="#shop-catigory-1">Bouquets anniversaire <i class="ion-ios-arrow-down"></i></a>
+                                        <ul id="shop-catigory-1" class="panel-collapse collapse show">
+                                            <li><a href="#">Aster</a></li>
+                                            <li><a href="#">Aubrieta</a></li>
+                                            <li><a href="#">Basket of Gold</a></li>
+                                            <li><a href="#">Bellflower</a></li>
+                                            <li><a href="#">Buttercup</a></li>
+                                        </ul>
+                                    </li>
+                                    <li> <a data-toggle="collapse" data-parent="#faq" href="#shop-catigory-2">Bouquets mariage<i class="ion-ios-arrow-down"></i></a>
+                                        <ul id="shop-catigory-2" class="panel-collapse collapse">
+                                            <li><a href="#">Calendula</a></li>
+                                            <li><a href="#">Carnation</a></li>
+                                            <li><a href="#">Castor Bean</a></li>
+                                            <li><a href="#">Catmint</a></li>
+                                            <li><a href="#">Chives</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li> <a href="#">Décor d'interieur</a> </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-price-filter mt-40 shop-sidebar-border pt-35">
+                            <h4 class="shop-sidebar-title">Prix </h4>
+                            <div class="price_filter mt-25">
+                                <span>Marge:  $100.00 - 1.300.00 </span>
+                                <div id="slider-range"></div>
+                                <div class="price_slider_amount">
+                                    <div class="label-input">
+                                        <input type="text" id="amount" name="price"  placeholder="Ajoutez votre prix" />
+                                    </div>
+                                    <button type="button">Filtrer</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shop-widget mt-40 shop-sidebar-border pt-35">
+                            <h4 class="shop-sidebar-title">Marque</h4>
+                            <div class="sidebar-list-style mt-20">
+                                <ul>
+                                    <li><input type="checkbox"><a href="#">Poure </a></li>
+                                    <li><input type="checkbox"><a href="#">Eveman </a></li>
+                                    <li><input type="checkbox"><a href="#">Iccaso </a></li>
+                                    <li><input type="checkbox"><a href="#">Annopil </a></li>
+                                    <li><input type="checkbox"><a href="#">Origina </a></li>
+                                    <li><input type="checkbox"><a href="#">Perini  </a></li>
+                                    <li><input type="checkbox"><a href="#">Dolloz </a></li>
+                                    <li><input type="checkbox"><a href="#">Spectry </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="shop-widget mt-40 shop-sidebar-border pt-35">
+                            <h4 class="shop-sidebar-title">Couleur</h4>
+                            <div class="sidebar-list-style mt-20">
+                                <ul>
+                                    <li><input type="checkbox"><a href="#">Noir </a></li>
+                                    <li><input type="checkbox"><a href="#">Bleu </a></li>
+                                    <li><input type="checkbox"><a href="#">Vert </a></li>
+                                    <li><input type="checkbox"><a href="#">Gris </a></li>
+                                    <li><input type="checkbox"><a href="#">Rouge</a></li>
+                                    <li><input type="checkbox"><a href="#">Blanc</a></li>
+                                    <li><input type="checkbox"><a href="#">Jaune</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="shop-widget mt-40 shop-sidebar-border pt-35">
+                            <h4 class="shop-sidebar-title">Tagues populaires</h4>
+                            <div class="shop-tags mt-25">
+                                <ul>
+                                    <li><a href="#">Bouquet</a></li>
+                                    <li><a href="#">Evenement</a></li>
+                                    <li><a href="#">Cadeau</a></li>
+                                    <li><a href="#">Joie</a></li>
+                                    <li><a href="#">Amour </a></li>
+                                    <li><a href="#">Special</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

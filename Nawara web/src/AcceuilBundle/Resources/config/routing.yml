@@ -1,0 +1,17 @@
+acceuil_homepage:
+    path:     /test
+    defaults: { _controller: AcceuilBundle:Default:index }
+acceuil:
+    path:     /
+    defaults: { _controller: AcceuilBundle:Default:accueil }
+connecter:
+    path:     /connecter
+    defaults: { _controller: AcceuilBundle:Default:connecter }
+backoffice:
+    path:     /backoffice
+    defaults: { _controller: AcceuilBundle:Default:backoffice }
+administrateurs:
+    path:     /administrateurs
+    defaults: { _controller: AcceuilBundle:Default:administrateurs }
+
+

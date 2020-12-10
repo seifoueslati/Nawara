@@ -1,0 +1,7 @@
+produit_homepage:
+    path:     /
+    defaults: { _controller: ProduitBundle:Default:index }
+displayproduit:
+    path:     /displayproduit
+    defaults: { _controller: ProduitBundle:Default:displayproduit }
+

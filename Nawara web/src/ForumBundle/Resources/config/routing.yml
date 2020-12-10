@@ -1,0 +1,6 @@
+forum_homepage:
+    path:     /
+    defaults: { _controller: ForumBundle:Default:index }
+displayforum:
+    path:     /displayforum
+    defaults: { _controller: ForumBundle:Default:displayforum }

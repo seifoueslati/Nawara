@@ -1,0 +1,6 @@
+panier_homepage:
+    path:     /
+    defaults: { _controller: PanierBundle:Default:index }
+displaypanier:
+    path:     /displaypanier
+    defaults: { _controller: PanierBundle:Default:displaypanier }
